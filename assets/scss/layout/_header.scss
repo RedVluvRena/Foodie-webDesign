@@ -1,0 +1,77 @@
+.navbar {
+  padding: 0;
+  font-weight: 400;
+  height: 90px;
+}
+
+
+.navbar-brand {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  padding: 0;
+}
+
+
+@include pad {
+  img.offcanvas-title {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.bg-light-w{
+background-color: #fffffff3;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: $bs-navbar-active-color;
+
+  &.nav-link {
+    display: inline-block;
+    padding-bottom: 1px;
+    border-bottom: 2px solid $bs-navbar-active-color;
+  }
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  display: inline-block;
+  transition: all 0.15s;
+  color: $bs-navbar-active-color;
+  padding-bottom: 1px;
+  border-bottom: 2px solid $bs-navbar-active-color;
+}
+
+@include pad {
+  .navbar-nav {
+    text-align: center;
+
+    .nav-item {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+}
+
+/* 自訂滾動條寬度和樣式 */
+.first::-webkit-scrollbar {
+  width: 4px;
+  /* 設定 Y 軸滾動條寬度 */
+}
+
+.first::-webkit-scrollbar-thumb {
+  background-color: #e1e1e1;
+  /* 設定滾動條顏色 */
+  border-radius: 10px;
+  /* 設定滾動條圓角 */
+}

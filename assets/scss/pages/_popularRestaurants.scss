@@ -1,0 +1,332 @@
+// popularRestaurants layout
+
+body {
+    background: #F9F9F9;
+}
+
+.main-banner {
+    background-image: url(../assets/images/restaurant-cover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+
+    .bannerTitle {
+        padding-top: 270px;
+        padding-bottom: 200px;
+        // padding-top: 306px;
+        // padding-bottom: 297px;
+
+        h1 {
+            font-size: 56px;
+            font-weight: $font-weight-semibold;
+            line-height: 120%;
+            padding-bottom: 32px;
+        }
+    }
+}
+
+@include pad {
+    .main-banner {
+        background-image: url(../assets/images/popular_banner_mb.jpg);
+    }
+}
+
+.restaurant-title {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+
+// 下方內容區＿開始
+
+// 右大區
+.popular-store-block {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .left-section-width {
+        margin-right: 40px;
+    }
+}
+
+.hr-line {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #c6c6c6;
+    // padding-top: 8px;
+    // padding-bottom: 8px;
+}
+
+.food-card-link {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.scale-hover:hover {
+    -webkit-animation: scale-hover 0.3s ease-out both;
+    animation: scale-hover 0.3s ease-out both;
+}
+@-webkit-keyframes scale-hover {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 50%;
+    }
+
+    100% {
+        -webkit-transform: scale(1.05) ;
+        transform: scale(1.05) ;
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 50%;
+    }
+}
+
+@keyframes scale-hover {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 50%;
+    }
+
+    100% {
+        -webkit-transform: scale(1.05) ;
+        transform: scale(1.05) ;
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 50%;
+    }
+}
+
+
+.foodTag {
+    background-color: $pimary-500;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    padding: 4px 12px;
+    border-radius: 50rem;
+
+}
+
+.foodTag:hover {
+    background-color: $secondary;
+    color: #ffffff;
+    transition: all 0.15s;
+}
+
+.img-food {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+// 左側篩選器
+h5.titleCity {
+    font-weight: 400;
+    padding-left: 16px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: #E9E9E9;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.list-group-city {
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
+
+        label.city {
+            padding-left: 16px;
+            padding-top: 16px;
+        }
+
+        label.city:last-child {
+            // padding-top: 16px;
+        }
+
+    }
+}
+
+.form-check-input:checked {
+    background-color: $pimary-500;
+    border-color: $pimary-500;
+}
+
+.form-check-input:focus {
+    border-color: #ffae3466;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #ffae3466;
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #ffae3400;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #c8c8c866;
+}
+
+// 篩選器手機版消失
+@include pad {
+    .filter-lg-none {
+        display: none;
+    }
+}
+
+
+// 右側result 
+.card-store {
+    padding: 24px 20px;
+}
+
+.right-section-width {
+    padding: 16px 40px 40px 40px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+
+// 搜尋框
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 1.35rem .75rem;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #828282;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #F2F2F2;
+    // border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: 50rem;
+}
+
+// 卡片資訊
+.detailIcon {
+    width: 32px;
+    height: 32px;
+}
+
+// 收藏按鈕
+.collectIcon {}
+
+button.collectBgicon {
+    outline: none !important;
+    background-color: #ffffff00 !important;
+    padding: 0;
+    border: none !important;
+}
+
+.circlest0 {
+    fill-opacity: 0.2;
+}
+
+.starst1 {
+    fill: #E9E9E9;
+}
+
+.collectBgicon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+#collectsvgIcon:hover {
+    .circlest0 {
+        fill-opacity: 0.6;
+    }
+
+    .starst1 {
+        fill: #FFAE34;
+    }
+}
+
+
+// 頁籤
+.navigation{
+    --bs-pagination-color: #828282!important;
+}
+
+.pagination {
+    --bs-pagination-padding-x: 0.75rem;
+    --bs-pagination-padding-y: 0.375rem;
+    --bs-pagination-font-size: 16px;
+    --bs-pagination-border-width: 0;
+    --bs-pagination-focus-color: #ffae3487;
+    --bs-pagination-focus-bg: var(--bs-secondary-bg);
+    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(204, 183, 77, 0.25);
+    --bs-pagination-active-color: #fff;
+    --bs-pagination-active-bg: #ffae3487;
+    --bs-pagination-active-border-color: #ffae3487;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    padding: 10px 18px;
+    border-radius: 4px;
+    margin: 4px;
+    color: #828282;
+    text-decoration: none;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: white;
+    background-color:$pimary-500;
+    border-color: rgb(93, 93, 93);
+}
+
+.page-link:focus {
+    color: #ffffff;
+    background-color:rgba(93, 93, 93, 0.627);
+}
+
+
+// 篩選器桌機版＿按鈕消失
+.filter {
+    display: none;
+}
+
+@include pad {
+    .filter {
+        width: 40px;
+        height: 40px;
+        padding-right: 8px;
+        margin-right: 8px;
+        display: block;
+    }
+}
+
+
+// btn
+.btn-pimary-style {
+    background-color: $pimary-500;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn-pimary-style:hover {
+    background-color: $secondary;
+    color: #ffffff;
+    transition: all 0.15s;
+}
+
+.search-btn {
+    border: none;
+    background-color: #f2f2f200 !important;
+    right: 8px;
+
+    img {
+        width: 56px;
+        height: 56px;
+    }
+}

@@ -1,0 +1,99 @@
+footer {
+  background: $pimary-500;
+  color: white;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  font-weight: 400;
+}
+
+@include pad {
+  footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .footerflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    a {
+      display: inline-block;
+      margin-left: 32px;
+      text-decoration: none;
+    }
+
+  }
+
+  .itembox {
+    &.icon {
+      a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 56px;
+        height: 56px;
+        margin-left: 24px;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+.footer-logo {
+  width: 245px;
+}
+
+
+
+@media (max-width: 992px) {
+  .footer {
+    .iconbox a {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    .footerflex {
+      flex-direction: column;
+      align-items: center;
+
+      &.copyright {
+        flex-direction: column-reverse;
+
+        .copyrightbox {
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      a {
+        margin-left: 0px;
+        margin-bottom: 32px;
+      }
+
+    }
+
+    .itembox {
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-logo {
+      width: 231px;
+    }
+
+  }
+}
