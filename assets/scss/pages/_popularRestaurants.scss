@@ -5,7 +5,7 @@ body {
 }
 
 .main-banner {
-    background-image: url(../assets/images/restaurant-cover.png);
+    background-image: url(../images/restaurant-cover.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -28,7 +28,7 @@ body {
 
 @include pad {
     .main-banner {
-        background-image: url(../assets/images/popular_banner_mb.jpg);
+        background-image: url(../images/popular_banner_mb.jpg);
     }
 }
 

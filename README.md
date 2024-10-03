@@ -52,3 +52,14 @@ http://localhost:5173/Foodie-webDesign/pages/
 
 http://localhost:5173/Foodie-webDesign/pages/popularRestaurants.html
 
+
+git commit -m 'popularRestaurants first commit'
+
+git remote add origin https://github.com/RedVluvRena/Foodie-webDesign.git
+
+首頁
+https://redvluvrena.github.io/Foodie-webDesign/
+
+這些店很熱門
+https://redvluvrena.github.io/Foodie-webDesign/popularRestaurants.html
+
