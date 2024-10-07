@@ -54,6 +54,7 @@ http://localhost:5173/Foodie-webDesign/pages/popularRestaurants.html
 
 
 git commit -m 'popularRestaurants first commit'
+git commit -m '圖片路徑修改'
 
 git remote add origin https://github.com/RedVluvRena/Foodie-webDesign.git
 

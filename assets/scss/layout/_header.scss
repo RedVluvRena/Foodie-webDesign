@@ -4,14 +4,12 @@
   height: 90px;
 }
 
-
 .navbar-brand {
   width: 70px;
   height: 70px;
   object-fit: cover;
   padding: 0;
 }
-
 
 @include pad {
   img.offcanvas-title {
@@ -61,17 +59,4 @@ background-color: #fffffff3;
 
   }
 
-}
-
-/* 自訂滾動條寬度和樣式 */
-.first::-webkit-scrollbar {
-  width: 4px;
-  /* 設定 Y 軸滾動條寬度 */
-}
-
-.first::-webkit-scrollbar-thumb {
-  background-color: #e1e1e1;
-  /* 設定滾動條顏色 */
-  border-radius: 10px;
-  /* 設定滾動條圓角 */
 }

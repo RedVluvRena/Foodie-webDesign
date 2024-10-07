@@ -4,8 +4,8 @@ body {
     background: #F9F9F9;
 }
 
-.main-banner {
-    background-image: url(../images/popular-main-cover.jpg);
+.main-banner-topic {
+    background-image: url(../images/topic-main-banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -25,16 +25,12 @@ body {
             line-height: 120%;
             padding-bottom: 32px;
         }
-        p{
-            font-size: 32px;
-            font-weight: 400;
-        }
     }
 }
 
 @include pad {
-    .main-banner {
-        background-image: url(../images/popular_banner_mb.jpg);
+    .main-banner-topic {
+        background-image: url(../images/topic-main-banner_mb.jpg);
 
         .bannerTitle {
             text-align: center;
