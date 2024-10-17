@@ -1,4 +1,4 @@
-// popularRestaurants layout
+// popularRestaurants topicShare共用 layout
 
 body {
     background: #F9F9F9;
@@ -32,6 +32,7 @@ body {
     }
 }
 
+// 使用mixin mobile-sm:480px mobile:576px mobile-lg:768px pad:992px
 @include pad {
     .main-banner {
         background-image: url(../images/popular_banner_mb.jpg);
@@ -303,7 +304,6 @@ h5.titleCity {
 }
 
 // 收藏按鈕
-.collectIcon {}
 
 button.collectBgicon {
     outline: none !important;
