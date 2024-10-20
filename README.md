@@ -45,6 +45,9 @@ git remote add origin [GitHub Repositories Url]
 git push -u origin main // 僅限第一次輸入，往後只需要輸入 git push
 ```
 
+
+
+
 3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
 
 

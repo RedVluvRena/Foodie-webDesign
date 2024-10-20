@@ -1,39 +1,32 @@
-// popularRestaurants layout
+// topicSubpage style
 
-.main-banner-topic {
-    background-image: url(../images/topic-main-banner.jpg);
+.image-banner {
+    background-image: url(../images/share/imageBanner.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    color: #ffffff;
+    background-size: contain;
 
-    .bannerTitle {
-        // 文字置頂設定
-        padding-top: 270px;
-        padding-bottom: 200px;
-        // 文字置中設定
-        // padding-top: 306px;
-        // padding-bottom: 297px;
+    .imageBannerTitle {
+        padding-top: calc(120px + 90px);
+        padding-bottom: 120px;
 
         h1 {
             font-size: 56px;
-            font-weight: $font-weight-semibold;
-            line-height: 120%;
-            padding-bottom: 32px;
+            color: #333333;
+            font-weight: 700;
+            line-height: 67px;
+            text-align: center;
         }
-        p{
-            font-size: 32px;
-            font-weight: 400;
-        }
+
     }
 }
 
-
+// 使用mixin mobile-sm:480px mobile:576px mobile-lg:768px pad:992px
 @include pad {
-    .main-banner-topic {
-        background-image: url(../images/topic-main-banner_mb.jpg);
+    .image-banner {
+        background-image: url(../images/popular_banner_mb.jpg);
 
-        .bannerTitle {
+        .imageBannerTitle {
             text-align: center;
 
             h1 {
@@ -43,47 +36,43 @@
                 padding-bottom: 16px;
             }
 
-            p {
-                font-size: 24px;
-                font-weight: 400;
-
-            }
         }
     }
 
-    .px-w {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
+
 }
 
 @include mobile {
     .main-banner {
         background-image: url(../images/popular_banner_mb.jpg);
 
-        .bannerTitle {
+        .imageBannerTitle {
             padding-top: calc(90px + 60px);
             padding-bottom: 210px;
-            // padding-top: calc(144px + 64px);
-            // padding-bottom: 120px;
         }
     }
 
-    .px-w {
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
+
 }
 
-@include mobile-sm {
+// 下方topicSubpage內容區＿開始
+.bg-gray-space {
+    background-color: #F9F9F9;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
-    .px-w {
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
-    }
+}
+
+.blank-space {
+    background-color: #fff;
+
+}
+.mainArea {
+   
 }
 
 
+// 下方topicSubpage內容區＿end
 
 .restaurant-title {
     font-size: 24px;
@@ -122,30 +111,9 @@
     // padding-bottom: 8px;
 }
 
-// 食物介紹圖_寬度設定
-.picture-px-w {
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-}
-// 食物介紹圖
 .food-card-link {
     overflow: hidden;
     cursor: pointer;
-    max-width: 327px;
-    // height: 170px;
-    // height: 230px;
-    padding: 0px;
-}
-
-
-@include pad {
-    .food-card-link {
-        overflow: hidden;
-        cursor: pointer;
-        max-width:100%;
-        padding: 0px;
-    }
-    
 }
 
 .scale-hover:hover {
@@ -322,13 +290,7 @@ h5.titleCity {
     height: 32px;
 }
 
-.yammyfoodtag {
-    color: #F08929;
-    font-weight: 500;
-}
-
 // 收藏按鈕
-.collectIcon {}
 
 button.collectBgicon {
     outline: none !important;
