@@ -47,7 +47,6 @@ git push -u origin main // 僅限第一次輸入，往後只需要輸入 git pus
 
 
 
-
 3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
 
 
@@ -67,6 +66,7 @@ https://redvluvrena.github.io/Foodie-webDesign/
 
 這些店很熱門
 https://redvluvrena.github.io/Foodie-webDesign/popularRestaurants.html
+
 主題
 https://redvluvrena.github.io/Foodie-webDesign/topicShare.html
 

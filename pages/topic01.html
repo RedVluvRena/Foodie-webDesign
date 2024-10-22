@@ -1,56 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>主題分享</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>主題分享結果頁</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
 
     <div class="image-banner container-fluid">
- 
+
       <div class="imageBannerTitle text-white">
         <h1 class="">主題分享</h1>
       </div>
     </div>
 
-<div class="bg-gray-space  container-fluid">
+    <div class="bg-gray-space  container-fluid">
 
-    <div class="">
+      <div class="">
 
-    <div class="mainArea mx-auto text-center pt-4 pb-4 container blank-space">
+        <div class="mainArea mx-auto text-center pt-4 pb-4 container blank-space">
 
-      <div class="row">
+          <div class="row breadcrumb-section">
 
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">首頁</a></li>
-            <li class="breadcrumb-item"><a href="#">主題分享</a></li>
-            <li class="breadcrumb-item active" aria-current="page">台南 4 家超人氣老屋、美式、日式早午餐推薦</li>
-          </ol>
-        </nav>
+            <div class="col-12 col-md-6">
+              <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                  <li class="breadcrumb-item"><a href="#">主題分享</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">台南 4 家超人氣老屋、美式、日式早午餐推薦</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="next-page">
+                <span class="pe-3"><a href="#">上一頁</a></span>
+                <span class=""><a href="#">下一頁</a></span>
+              </div>
+            </div>
 
-      
-          <div class="">
-            <span class=""><a href="#">上一頁</a></span>
-            <span class=""><a href="#">下一頁</a></span>
-          <div>
-  
+
+          </div>
+
+          <div class="titleMainArea row ">
+
+            <div class="topic-title-area col-12 col-md-10">
+              <h1 class="text-center my-2 pb-3">台南 4 家超人氣老屋、美式、日式早午餐推薦</h1>
+              <div class="titleTag">
+                <a class="foodTag btn-pimary-style text-white" href="#">約會搭配景點
+                </a>
+                <a class="foodTag btn-pimary-style text-white" href="#">慶生
+                </a>
+                <a class="foodTag btn-pimary-style text-white" href="#">家庭聚餐
+                </a>
+                <a class="foodTag btn-pimary-style text-white" href="#">商務聚餐
+                </a>
+              </div>
+            </div>
+
+            <div class="titleSection col-12 col-md-2">
+
+              <div class="row text-end">
+
+                <div class="socialIconTop my-2 pb-3">
+                  <span class="pe-3">
+                    <a href="#">
+                      <img src="../assets/images/likeIcon.svg" alt="">
+                    </a>
+                  </span>
+                  <span class=""><a href="#"><img src="../assets/images/shareIcon.svg" alt="">
+                    </a>
+                  </span>
+                </div>
+
+                <div class="timeRelease">
+                  發佈時間:2023/11/13
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="row title-info">
+
+
+            <nav id="navbar-example2" class="navbar stickyBarTag fixed-top">
+
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyHeading1">小北家灶咖</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyHeading2">日日享食</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyHeading3">樂禾田</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyHeading4">鹿耳晚晚</a>
+                </li>
+
+              </ul>
+
+            </nav>
+            <div class="hr-style"><hr></div>
+            
+
+            <p class="mb-3 col-12 titleInfo">
+              說到台南，除了琳瑯滿目的在地小吃，更是有許多美味又盛的台南早午餐，每一家都有其獨特的風格，無論是文青老屋風、美式或日式都有！今天小編要推薦4家超人氣台南早午餐，快來筆記筆記！台南許多熱門的早午餐店都隱身在巷弄內，且都是由老宅改造，一家比一家厲害，實在是竸爭激烈呀～如果在台南停留的天數有限，不妨參考小推薦的這
+              4 家，現在就把這篇加入囗袋名單，下次不用再選擇障礙啦!
+            </p>
+
+
+
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+              tabindex="0">
+
+              <!-- 第一區塊 -->
+              <div class="" id="scrollspyHeading1">
+
+                <div class="container-fluid infoblock p-0">
+                  <div class="row">
+
+
+                    <div class="col-md-6 p-0">
+                      <div class="store">
+                        <img class="p-0" src="../assets/images/share/share_1.jpg" alt="">
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-6 ">
+                      <div class="storeInfo">
+                        <h4>
+                          小北家灶咖
+                        </h4>
+
+                      </div>
+                    </div>
+
+
+                    <div class="col-12 contentInfo text-start">
+                      <p>
+                        就算以小吃為重，不吃早午餐的旅人，也很難沒聽過小北家灶咖！營業期只要經過就是在排隊，如此超高人氣必定有它獨有的魅力！小北家灶咖為老宅改建
+                        (推薦給你：台南便宜青旅大公開)，店內圍繞綠色樐栽,環境悠閒放鬆；餐點的部分會由店員細細解說，每一口都能吃到店家堅持選用好食材的用心與溫度，愜意的早晨坐在悠閒的老宅裡享用美味的早午餐，別有一番風味啊~
+                      </p>
+                    </div>
+
+
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+
+              <!-- 第二區塊 -->
+              <div class="" id="scrollspyHeading2">
+
+                <div class="container-fluid infoblock p-0">
+                  <div class="row">
+                    <div class="col-md-6 ">
+                      <div class="storeInfo">
+                        <h4>
+                          日日享食
+                        </h4>
+
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-6 p-0">
+                      <div class="store">
+                        <img class="p-0" src="../assets/images/share/share_2.jpg" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col-12 contentInfo text-start">
+                      <p>
+                        就算以小吃為重，不吃早午餐的旅人，也很難沒聽過小北家灶咖！營業期只要經過就是在排隊，如此超高人氣必定有它獨有的魅力！小北家灶咖為老宅改建
+                        (推薦給你：台南便宜青旅大公開)，店內圍繞綠色樐栽,環境悠閒放鬆；餐點的部分會由店員細細解說，每一口都能吃到店家堅持選用好食材的用心與溫度，愜意的早晨坐在悠閒的老宅裡享用美味的早午餐，別有一番風味啊~
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+
+              <!-- 第三區塊 -->
+              <div class="" id="scrollspyHeading3">
+
+                <div class="container-fluid infoblock p-0">
+                  <div class="row">
+
+
+                    <div class="col-md-6 p-0">
+                      <div class="store">
+                        <img class="p-0" src="../assets/images/share/share_3.jpg" alt="">
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-6 ">
+                      <div class="storeInfo">
+                        <h4>
+                          樂禾田
+                        </h4>
+
+                      </div>
+                    </div>
+
+
+                    <div class="col-12 contentInfo text-start">
+                      <p>
+                        就算以小吃為重，不吃早午餐的旅人，也很難沒聽過小北家灶咖！營業期只要經過就是在排隊，如此超高人氣必定有它獨有的魅力！小北家灶咖為老宅改建
+                        (推薦給你：台南便宜青旅大公開)，店內圍繞綠色樐栽,環境悠閒放鬆；餐點的部分會由店員細細解說，每一口都能吃到店家堅持選用好食材的用心與溫度，愜意的早晨坐在悠閒的老宅裡享用美味的早午餐，別有一番風味啊~
+                      </p>
+                    </div>
+
+
+                  </div>
+                </div>
+
+              </div>
+
+         
+
+
+
+              <!-- 第四區塊 -->
+              <div id="scrollspyHeading4" class="" id="scrollspyHeading2">
+
+                <div class="container-fluid infoblock p-0">
+                  <div class="row">
+                    <div class="col-md-6 ">
+                      <div class="storeInfo">
+                        <h4>
+                          鹿耳晚晚
+                        </h4>
+
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-6 p-0">
+                      <div class="store">
+                        <img class="p-0" src="../assets/images/share/share_4.jpg" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col-12 contentInfo text-start">
+                      <p>
+                        就算以小吃為重，不吃早午餐的旅人，也很難沒聽過小北家灶咖！營業期只要經過就是在排隊，如此超高人氣必定有它獨有的魅力！小北家灶咖為老宅改建
+                        (推薦給你：台南便宜青旅大公開)，店內圍繞綠色樐栽,環境悠閒放鬆；餐點的部分會由店員細細解說，每一口都能吃到店家堅持選用好食材的用心與溫度，愜意的早晨坐在悠閒的老宅裡享用美味的早午餐，別有一番風味啊~
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
 
     </div>
 
-      <h1 class="text-center my-2 title-deco pb-3">台南 4 家超人氣老屋、美式、日式早午餐推薦</h1>
-      <p class="mb-3 mb-3">說到台南，除了琳瑯滿目的在地小吃，更是有許多美味又盛的台南早午餐，每一家都有其獨特的風格，無論是文青老屋風、美式或日式都有！今天小編要推薦4家超人氣台南早午餐，快來筆記筆記！台南許多熱門的早午餐店都隱身在巷弄內，且都是由老宅改造，一家比一家厲害，實在是竸爭激烈呀～如果在台南停留的天數有限，不妨參考小推薦的這 4 家，現在就把這篇加入囗袋名單，下次不用再選擇障礙啦!</p>
-    </div>
 
-  </div>
-</div>
 
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>
