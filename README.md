@@ -58,7 +58,7 @@ http://localhost:5173/Foodie-webDesign/pages/popularRestaurants.html
 
 
 git commit -m 'popularRestaurants first commit'
-git commit -m 'ejs路徑更新修改測試'
+git commit -m 'ejs路徑確認更新完成'
 git commit -m 'topicSharefirst commit'
 
 git remote add origin https://github.com/RedVluvRena/Foodie-webDesign.git
