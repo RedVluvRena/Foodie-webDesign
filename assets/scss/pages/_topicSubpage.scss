@@ -28,7 +28,6 @@
 // 使用mixin mobile-sm:480px mobile:576px mobile-lg:768px pad:992px
 @include pad {
     .image-banner {
-
         .imageBannerTitle {
             text-align: center;
 
@@ -55,7 +54,6 @@
         }
     }
 
-
 }
 
 // 大號主btn
@@ -63,9 +61,16 @@
     background-color: #F08929;
     font-size: 20px;
     font-weight: 400;
-    padding: 6px 12px;
-    margin-left: 2px;
-    margin-right: 2px;
+    padding: 6px 12px 7px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+@include pad {
+    .btn-topic-pimary-style {
+        padding-bottom: 6px;
+    }
+
 }
 
 .btn-topic-pimary-style:hover {
@@ -74,13 +79,28 @@
     transition: all 0.15s;
 }
 
+@include pad {
+    .btn-topic-pimary-style {
+        font-size: 16px;
+        // padding: 4px 12px;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-bottom: 6px;
+    }
+}
 
 // topicSubpage內容區＿開始
 .bg-gray-space {
     background-color: #F9F9F9;
     padding-top: 40px;
     padding-bottom: 40px;
+}
 
+@include pad {
+    .bg-gray-space {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 .blank-space {
@@ -93,9 +113,40 @@
     margin-right: 40px;
 }
 
+@include pad {
+    .breadcrumb-section {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.breadcrumb {
+    margin-bottom: var(--bs-breadcrumb-margin-bottom);
+}
+
+@include pad {
+    .breadcrumb {
+        margin-bottom: 0px;
+    }
+
+}
+
 .next-page {
     text-align: right;
     color: #F08929;
+}
+
+.nextPage-lg {
+    display: flex;
+    justify-content: end;
+}
+
+@include mobile-sm {
+    .nextPage-lg {
+        padding: 24px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .titleMainArea {
@@ -106,6 +157,15 @@
     margin-bottom: 40px;
 }
 
+@include pad {
+    .titleMainArea {
+        padding: 3px;
+        margin-left: 14px;
+        margin-right: 14px;
+        margin-bottom: 30px;
+    }
+}
+
 // 發佈時間
 .timeRelease {
     font-weight: 400;
@@ -114,11 +174,21 @@
 
 // 文字區大標
 .topic-title-area {
+    font-size: 40px;
     text-align-last: left;
 
     h1 {
         font-weight: 700;
         line-height: 1.4;
+    }
+
+}
+
+@include pad {
+    .topic-title-area {
+        h1 {
+            font-size: 28px;
+        }
     }
 }
 
@@ -126,7 +196,25 @@
 .subInfoShare {
     flex-direction: column;
     align-items: end;
-    height: 180px;
+    // height: 180px;
+    height: 100%;
+    text-align: right;
+}
+
+@include pad {
+    .subInfoShare {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        // height: 180px;
+        height: 100%;
+        text-align: center;
+    }
+}
+
+.socialIconTop{
+
 }
 
 //stickyBarTag_未完 
@@ -210,6 +298,12 @@ nav.stickyBarTag {
     font-weight: 400;
 }
 
+@include pad {
+    .titleInfo {
+        padding-bottom: 56px;
+    }
+}
+
 .container-fluid.infoblock .store {
     padding: 0;
 }
@@ -224,6 +318,7 @@ nav.stickyBarTag {
     }
 }
 
+
 // 內容文章
 .contentInfo p {
     padding-left: 48px;
@@ -231,6 +326,16 @@ nav.stickyBarTag {
     padding-bottom: 120px;
     padding-top: 40px;
     font-size: 20px;
+}
+
+@include pad {
+    .contentInfo p {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 0px;
+        padding-bottom: 56px;
+
+    }
 }
 
 .restaurant-title {
@@ -279,6 +384,12 @@ nav.stickyBarTag {
     color: #F08929;
     font-size: 20px;
     font-weight: 700;
+}
+
+@include pad {
+    .highlight p {
+        font-size: 16px;
+    }
 }
 
 // 更多資訊按鈕
