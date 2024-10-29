@@ -28,6 +28,8 @@
 // 使用mixin mobile-sm:480px mobile:576px mobile-lg:768px pad:992px
 @include pad {
     .image-banner {
+        background-image: url(../images/share/topic_mb.jpg);
+
         .imageBannerTitle {
             text-align: center;
 
@@ -98,6 +100,7 @@
 
 @include pad {
     .bg-gray-space {
+        padding-top: 0px;
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -186,6 +189,7 @@
 
 @include pad {
     .topic-title-area {
+        font-size: 20px;
         h1 {
             font-size: 28px;
         }
