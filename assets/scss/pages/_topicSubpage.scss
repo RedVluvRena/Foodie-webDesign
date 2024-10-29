@@ -100,7 +100,7 @@
 
 .titleMainArea {
     background-color: #F9F9F9;
-    padding: 48px 48px 35px 48px;
+    padding: 48px 48px 60px 48px;
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 40px;
@@ -142,6 +142,7 @@ nav.stickyBarTag {
     background-color: rgb(255 255 255 / 91%);
 }
 
+
 .nav-link:hover,
 .nav-link:focus {
     display: inline-block;
@@ -149,7 +150,7 @@ nav.stickyBarTag {
 
 .nav-pills {
     // --bs-nav-pills-border-radius: var(--bs-border-radius);
-    --bs-nav-pills-link-active-color: #383838;
+    --bs-nav-pills-link-active-color: #F08929;
     --bs-nav-pills-link-active-bg: #ffffff00;
 }
 
@@ -157,7 +158,7 @@ nav.stickyBarTag {
 .nav-pills .show>.nav-link {
     font-size: 20px;
     font-weight: 700;
-    border-bottom: 2px solid #c87800;
+    border-bottom: 2px solid #F08929;
     transition: all 0.15s;
     padding-bottom: 3.5px;
     // color: var(--bs-nav-pills-link-active-color);
@@ -174,6 +175,15 @@ nav.stickyBarTag {
 .nav-pills .nav-link {
     border-radius: 0;
 }
+
+// 主題sticky bar樣式設定
+.nav-link-topic:hover,
+.nav-link:focus {
+    color: #F08929;
+    border-bottom: 2px solid #F08929;
+    padding-bottom: 3px;
+}
+
 
 .stickyBarTag.fixed-top {
     position: sticky;
@@ -215,7 +225,7 @@ nav.stickyBarTag {
 }
 
 // 內容文章
-.contentInfo p{
+.contentInfo p {
     padding-left: 48px;
     padding-right: 48px;
     padding-bottom: 120px;
@@ -271,12 +281,12 @@ nav.stickyBarTag {
     font-weight: 700;
 }
 
-// 更多按鈕
-// .more:hover{
-//     border: #F08929 1px solid;
-//     color:#fff;
-//     background-color: #f08929b1;
-// } 
+// 更多資訊按鈕
+// more img.detailIcon:hover{
+.more a:hover {
+    transform: translate(0.1rem, 0rem);
+    transition: all 0.3s;
+}
 
 .more {
     font-size: 16px;
@@ -320,8 +330,8 @@ nav.stickyBarTag {
     padding: 24px;
 }
 
-.guessMainTitle h3{
-  padding-left: 24px;
+.guessMainTitle h3 {
+    padding-left: 24px;
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: 32px;
@@ -348,7 +358,6 @@ nav.stickyBarTag {
 
 }
 
-.guesslink{
+.guesslink {
     cursor: pointer;
 }
-
