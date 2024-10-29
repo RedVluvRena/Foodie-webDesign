@@ -1,22 +1,12 @@
 // 自定義變數
+
 $primary: #B2751A; 
-// 500
 $pimary-500: #F08929;
 $pimary-40: #FFAE34;
 $pimary-60: #FFF8ED;
 $pimary-80: #3F95FF;
 $pimary-100: #0068FF;
 $pimary-120: #003BB7;
-
-$success-10: #D4F9FE;
-$success-20: #A9EFFE;
-$success-100: #2AAFFC;
-$success-120: #1566B5;
-
-$info-10: #F0FCD1;
-$info-20: #DDFAA5;
-$info-100: #7CD31F;
-$info-120: #48970F;
 
 $alert-10: #FFE0D7;
 $alert-20: #FFBBB0;
@@ -35,13 +25,9 @@ $border-radius-small: 12px;
 $border-radius-md: 20px;
 $border-radius-circle: 100px;
 
-$color-swiper-shadow: rgba($neutral-100, 10%);
-
-$font-family-primary: "Noto Sans";
-// $font-family-primary: "Poppins", "Noto Sans TC";
-
+$font-family-primary:"Noto Sans", "Noto Sans TC","Microsoft JhengHei", "微軟正黑體" ,"Poppins", "arial";
 $letter-spacing: 2%;
-$padding-all: 8px 12px;
 
+$color-swiper-shadow: rgba($neutral-100, 10%);
 $bs-navbar-active-color:#B2751A;
 
