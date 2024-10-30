@@ -26,17 +26,23 @@ background-color: #fffffff3;
   padding: 0;
   margin-left: 28px;
   margin-right: 28px;
+
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
   color: $bs-navbar-active-color;
 
+
   &.nav-link {
     display: inline-block;
-    padding-bottom: 1px;
     border-bottom: 2px solid $bs-navbar-active-color;
+
   }
+}
+
+.nav-hight{
+  height:35px;
 }
 
 .nav-link:hover,
@@ -44,7 +50,7 @@ background-color: #fffffff3;
   display: inline-block;
   transition: all 0.15s;
   color: $bs-navbar-active-color;
-  padding-bottom: 1px;
+
   border-bottom: 2px solid $bs-navbar-active-color;
 }
 

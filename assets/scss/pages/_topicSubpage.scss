@@ -211,17 +211,32 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        // height: 180px;
         height: 100%;
         text-align: center;
+        padding: 15px 3px 16px 3px;
     }
 }
 
 .socialIconTop{
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 1rem;
+    
+}
+
+// shareIcon
+@include pad{
+    .shareIcon img{
+        width: 35px;
+        }   
+        .socialIconTop{
+          padding: 0px;
+          margin: 0px;  
+        }
 
 }
 
-//stickyBarTag_未完 
+//stickyBarTag 
 nav.stickyBarTag {
     height: 42px;
 
@@ -276,7 +291,6 @@ nav.stickyBarTag {
     padding-bottom: 3px;
 }
 
-
 .stickyBarTag.fixed-top {
     position: sticky;
     top: 90px;
@@ -288,6 +302,17 @@ nav.stickyBarTag {
     padding-left: 55px;
 }
 
+@media (max-width: 991px) {
+    .chooseSection {
+        white-space: nowrap;
+        overflow: visible !important;
+        overflow-x: scroll !important;
+        flex-wrap: nowrap;
+    }
+    nav.stickyBarTag .nav-pills{
+        padding: 0px;
+    }
+}
 
 // 下方topicSubpage圖文內容區＿開始
 
@@ -428,8 +453,8 @@ nav.stickyBarTag {
     padding: 8px 16px;
     display: inline-block;
     margin-top: 24px;
-    margin-top: 40px;
-    margin-bottom: 120px;
+    margin-top: 20px;
+    margin-bottom: 100px;
     font-size: 20px;
     font-weight: 400;
 }
@@ -476,3 +501,4 @@ nav.stickyBarTag {
 .guesslink {
     cursor: pointer;
 }
+
