@@ -44,6 +44,11 @@ background-color: #fffffff3;
 .nav-hight{
   height:35px;
 }
+@include pad{
+  .nav-hight{
+    height:auto;
+  }
+}
 
 .nav-link:hover,
 .nav-link:focus {
