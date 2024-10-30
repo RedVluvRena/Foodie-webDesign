@@ -58,7 +58,7 @@ http://localhost:5173/Foodie-webDesign/pages/popularRestaurants.html
 
 
 git commit -m 'popularRestaurants first commit'
-git commit -m '主題頁_最終更新_修bug'
+git commit -m '主題頁_最終更新_修bug2'
 git commit -m 'topicSharefirst commit'
 
 git remote add origin https://github.com/RedVluvRena/Foodie-webDesign.git
